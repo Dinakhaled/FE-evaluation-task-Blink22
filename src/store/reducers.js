@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import ReducerExample from "./ReducerExample";
+import SideMenu from "./sideMenu/reducer";
 
 export default combineReducers({
-  ReducerExample,
+  SideMenu,
 });

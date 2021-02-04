@@ -1,1 +1,105 @@
-/* ============= Import your fonts here ============= */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-BlackItalic.eot');
+  src: url('../assets/fonts/Rubik-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-BlackItalic.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-BlackItalic.woff') format('woff'),
+      url('../assets/fonts/Rubik-BlackItalic.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-BlackItalic.svg#Rubik-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-bold';
+  src: url('../assets/fonts/Rubik-Bold.eot');
+  src: url('../assets/fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-Bold.woff') format('woff'),
+      url('../assets/fonts/Rubik-Bold.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-black';
+  src: url('../assets/fonts/Rubik-Black.eot');
+  src: url('../assets/fonts/Rubik-Black.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-Black.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-Black.woff') format('woff'),
+      url('../assets/fonts/Rubik-Black.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-Black.svg#Rubik-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-BoldItalic.eot');
+  src: url('../assets/fonts/Rubik-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-BoldItalic.woff') format('woff'),
+      url('../assets/fonts/Rubik-BoldItalic.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-BoldItalic.svg#Rubik-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-italic';
+  src: url('../assets/fonts/Rubik-Italic.eot');
+  src: url('../assets/fonts/Rubik-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-Italic.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-Italic.woff') format('woff'),
+      url('../assets/fonts/Rubik-Italic.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-Italic.svg#Rubik-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-light';
+  src: url('../assets/fonts/Rubik-Light.eot');
+  src: url('../assets/fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-Light.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-Light.woff') format('woff'),
+      url('../assets/fonts/Rubik-Light.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Rubik-semibold';
+  src: url('../assets/fonts/Rubik-SemiBold.eot');
+  src: url('../assets/fonts/Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-SemiBold.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-SemiBold.woff') format('woff'),
+      url('../assets/fonts/Rubik-SemiBold.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-regular';
+  src: url('../assets/fonts/Rubik-Regular.eot');
+  src: url('../assets/fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Rubik-Regular.woff2') format('woff2'),
+      url('../assets/fonts/Rubik-Regular.woff') format('woff'),
+      url('../assets/fonts/Rubik-Regular.ttf') format('truetype'),
+      url('../assets/fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

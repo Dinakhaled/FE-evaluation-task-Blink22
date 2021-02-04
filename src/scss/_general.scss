@@ -1,0 +1,24 @@
+body {
+  color: $black;
+}
+
+.anticon svg {
+  display: flex;
+}
+
+#page-wrap {
+  width: calc(100vw - 242px);
+}
+
+.icon {
+  font-size: 1.571rem;
+  color: $textGray;
+  margin-right: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.textGray {
+  color: $textGray;
+}

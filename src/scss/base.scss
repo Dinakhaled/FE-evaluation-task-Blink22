@@ -1,7 +1,9 @@
 @import './variables';
+@import '~antd/dist/antd.css';
 @import 'bootstrap/scss/bootstrap';
 @import './fonts';
 @import './mixins';
 @import './general';
 @import './helpers';
 @import './text';
+@import './form-elements';
