@@ -1,5 +1,5 @@
 {
-  "name": "movie-app",
+  "name": "project-name",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,10 +15,12 @@
     "redux-saga": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "json-server": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run json-server\" \"npm run dev\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +39,13 @@
   },
   "devDependencies": {
     "antd": "^4.12.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "react-burger-menu": "^3.0.3"
+    "concurrently": "^5.3.0",
+    "formik": "^2.2.6",
+    "json-server": "^0.16.3",
+    "react-burger-menu": "^3.0.3",
+    "react-number-format": "^4.4.4",
+    "yup": "^0.32.8"
   }
 }

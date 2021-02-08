@@ -1,0 +1,50 @@
+@import '../../scss/variables';
+
+.ant-modal {
+  min-width: 620px;
+  .ant-modal-content {
+    border: 1px solid $border;
+    border-radius: 4px;
+  
+    .ant-modal-header {
+      padding: 20px 25px;
+      border-color: $border;
+      
+      .ant-modal-title {
+        font-size: 1.428rem;
+      }
+  
+      .ant-modal-close-x {
+        color: $textGray;
+      }
+    }
+  
+    .ant-btn {
+      padding: 0;
+      min-height: 46px;
+      min-width: 85px;
+      border-radius: 4px;
+  
+      &:first-of-type {
+        border-color: $border;
+        color: $textGray;
+      }
+  
+      &:last-of-type {
+        background-color: $primary;
+      }
+    }
+  
+    .ant-modal-footer {
+      padding: 15px 25px;
+    }
+  }
+}
+
+// .ant-modal-wrap {
+//   z-index: 1102;
+// }
+
+// .ant-modal-mask {
+//   z-index: 1101;
+// }

@@ -4,6 +4,7 @@
   background-color: $white;
   border-right: 1px solid $border;
   padding: 13px 0;
+  z-index: 900 !important;
 
   .navItem {
     padding: 24px 28px;
