@@ -6,8 +6,12 @@ body {
   display: flex;
 }
 
-#page-wrap {
-  width: calc(100vw - 259px);
+.page-wrap {
+  width: calc(100% - 242px);
+}
+
+.page-wrap-full {
+  width: 100%;
 }
 
 .icon {

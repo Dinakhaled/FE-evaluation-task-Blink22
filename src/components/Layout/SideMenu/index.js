@@ -1,13 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { SIDEMENU_LIST } from "./data";
 import Logo from "../../../assets/images/logo.png";
 import styles from "./SideMenu.module.scss";
 
-const SideMenu = () => {
-  const isOpen = useSelector((state) => state.SideMenu.isMenuOpen);
+const SideMenu = ({ isOpen }) => {
   return (
     <Menu
       isOpen={isOpen}

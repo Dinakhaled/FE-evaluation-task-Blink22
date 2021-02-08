@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Table as AntdTable } from "antd";
-import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
-import { Space } from "antd";
+import { Table as AntdTable, Space } from "antd";
 import { useDispatch } from "react-redux";
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import _ from "lodash";
+import { activeVehicle } from "../../store/vehicles/actions";
+import { isEditFormOpen } from "../../store/EditForm/actions";
 import "./Table.scss";
 import "./Vehicles.scss";
 
-const Table = ({ data, action }) => {
+const Table = ({ data, columns, deleteAction, sort }) => {
   const [listData, setListData] = useState([]);
   const dispatch = useDispatch();
 
@@ -17,87 +18,45 @@ const Table = ({ data, action }) => {
 
   const handleDelete = (record) => {
     const newData = listData.filter((item) => item.key !== record.key);
-    _.isFunction(action) && dispatch(action(record.key));
+    _.isFunction(deleteAction) && dispatch(deleteAction(record.key));
     setListData(newData);
   };
 
-  const COLUMNS = [
-    {
-      title: "Vehicle",
-      dataIndex: "vehicle",
-      key: "vehicle",
-      render: ({ title, status }) => (
-        <>
-          <p className="vehicle-name">{title}</p>
-          <small
-            className={`vehicle-status ${
-              status === "Active"
-                ? "active"
-                : status === "In shop"
-                ? "in-shop"
-                : "out-of-service"
-            }`}
-          >
-            {status}
-          </small>
-        </>
-      ),
-    },
-    {
-      title: "Time",
-      dataIndex: "time",
-      key: "time",
-    },
-    {
-      title: "Total Km",
-      dataIndex: "totalKm",
-      key: "totalKm",
-    },
-    {
-      title: "Volume",
-      dataIndex: "volume",
-      key: "volume",
-    },
-    {
-      title: "Cost",
-      dataIndex: "cost",
-      key: "cost",
-      render: ({ title, subTitle }) => (
-        <>
-          <p className="cost-title mb-0">{title}</p>
-          <p className="cost-title sub mb-0">{subTitle}</p>
-        </>
-      ),
-    },
-    {
-      title: "Actions",
-      dataIndex: "actions",
-      key: "action",
-      render: (text, record) => (
+  const handleEdit = (record) => {
+    dispatch(activeVehicle(record));
+    dispatch(isEditFormOpen(true));
+  };
+
+  const actions = {
+    title: "Actions",
+    dataIndex: "actions",
+    key: "action",
+    render: (text, record) => {
+      return (
         <Space size={"large"}>
           <EditOutlined
             className="edit-icon tb-icon"
-            onClick={(e) => {
-              // console.log(e);
-              // dispatch(activeVehicle(vehicle));
-            }}
+            onClick={() => handleEdit(record)}
           />
           <DeleteOutlined
             onClick={() => handleDelete(record)}
             className="delete-icon tb-icon"
           />
         </Space>
-      ),
+      );
     },
-  ];
+  };
 
   return (
-    <AntdTable
-      columns={COLUMNS}
-      dataSource={listData}
-      className="antd-table-custom"
-      pagination={{ position: ["topRight"], showSizeChanger: true }}
-    />
+    <>
+      {sort}
+      <AntdTable
+        columns={[...columns, actions]}
+        dataSource={listData}
+        className="antd-table-custom"
+        pagination={{ position: ["topRight"], showSizeChanger: true }}
+      />
+    </>
   );
 };
 

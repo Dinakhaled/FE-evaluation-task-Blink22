@@ -5,17 +5,33 @@ import { Formik, Form } from "formik";
 import { VEHICLES } from "./data";
 import DatePicker from "../DatePicker/Date";
 import TimePicker from "../TimePicker";
+import { useDispatch, useSelector } from "react-redux";
+import { isEditFormOpen } from "../../store/EditForm/actions";
 
 const { Option } = Select;
 
 const EditVehicle = () => {
+  const dispatch = useDispatch();
+  const activeVehicle = useSelector((state) => state.Vehicles.activeVehicle);
+  const isEditFormOpenFlag = useSelector(
+    (state) => state.EditForm.isEditFormOpen
+  );
+
   function handleChange(value) {
     console.log(`selected ${value}`);
   }
 
+  const handleCancel = () => {
+    dispatch(isEditFormOpen(false));
+  };
+
   return (
     <>
-      <Modal isOpen={false} title="Edit Fuel Entry">
+      <Modal
+        isOpen={isEditFormOpenFlag}
+        title="Edit Fuel Entry"
+        handleCancel={handleCancel}
+      >
         <Formik>
           <Form>
             <div className="mb-3">

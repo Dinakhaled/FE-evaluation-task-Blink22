@@ -1,0 +1,1 @@
+export const IS_EDIT_FORM_OPEN = "IS_EDIT_FORM_OPEN";
