@@ -2,6 +2,7 @@
 
 ## Tools and technology
 - React.js
+- Lazy loading for the containers
 - SCSS
 - CSS-Modules
 - Ant design
