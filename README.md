@@ -26,6 +26,7 @@
 - Date/time pickers format issues (1h)
 - Edit submition (1h)
 - responsive (0.5h)
+** total: 16h **
 
 ## Feature work
 - Change the icons
