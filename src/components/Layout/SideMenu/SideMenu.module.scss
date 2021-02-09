@@ -1,0 +1,37 @@
+@import "../../../scss/variables";
+
+.wrapper {
+  background-color: $white;
+  border-right: 1px solid $border;
+  padding: 13px 0;
+  z-index: 900 !important;
+
+  .navItem {
+    padding: 24px 28px;
+    color: $textGray;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .navItemSub {
+    text-transform: initial;
+  }
+
+  .logo {
+    max-height: 39px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+  }
+
+}
+
+.active {
+  border-left: 2px solid $primary;
+  background-color: $iceBlue;
+  .icon {
+    color: $primary;
+  }
+}

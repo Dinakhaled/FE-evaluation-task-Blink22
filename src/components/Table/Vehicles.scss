@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.vehicle-name {
+  font-size: 1rem;
+  margin: 0;
+  color: $black;
+}
+
+.vehicle-status {
+  font-size: 0.857rem;
+
+  &.active {
+    color: $active;
+  }
+
+  &.out-of-service {
+    color: $danger;
+  }
+
+  &.in-shop {
+    color: $darkWarning;
+  }
+
+}
+
+.cost-title {
+  margin-bottom: 4px;
+
+  &.sub {
+    font-size: 0.857rem;
+    margin: 0;
+  }
+}
+
+.tb-icon {
+  font-size: 1.571rem;
+  cursor: pointer;
+
+  &.edit-icon {
+    color: $warning;
+  }
+
+  &.delete-icon {
+    color: $danger;
+  }
+}

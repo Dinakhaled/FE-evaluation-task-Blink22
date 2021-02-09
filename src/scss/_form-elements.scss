@@ -1,0 +1,42 @@
+.field,
+.ant-input-affix-wrapper,
+.ant-select-selector {
+  border-radius: 4px !important;
+  height: 46px !important;
+  display: flex !important;
+  align-items: center !important;
+  border: 1px solid $border !important;
+  border-right-width: 1px !important;
+
+  .ant-input-suffix {
+    color: $textGray;
+  }
+}
+
+.ant-input-search > 
+.ant-input-group > 
+.ant-input-group-addon:last-child {
+  left: 0;
+}
+
+.ant-input-search {
+  button {
+    display: none;
+  }
+}
+
+.label {
+  color: $textGray;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.field-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.error-text {
+  color: $danger;
+}

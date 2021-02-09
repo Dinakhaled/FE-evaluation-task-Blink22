@@ -1,3 +1,3 @@
-import React from "react";
+import { lazy } from "react";
 
-export const Home = React.lazy(() => import("../pages/Home/Home"));
+export const Dashboard = lazy(() => import("../pages/Dashboard"));
