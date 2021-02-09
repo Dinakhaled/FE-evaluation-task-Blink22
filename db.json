@@ -1,60 +1,72 @@
 {
   "vehicles": [
     {
-      "key": "1",
-      "id": 1,
-      "vehicle": {
-        "title": "Toyota Prius (B-41082)",
-        "status": "Active"
-      },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
-      "cost": {
-        "title": "Rp 625.000",
-        "subTitle": "Rp 9,879/ltr"
-      }
-    },
-    {
-      "key": "2",
-      "id": 2,
       "vehicle": {
         "title": "Toyota Prius (B-41083)",
-        "status": "In shop"
+        "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "time": 1613636580000,
+      "totalKm": "17.845",
+      "volume": "170.30",
+      "fuelType": "",
+      "fillingType": "",
+      "id": 1,
+      "key": "1",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
       }
     },
     {
-      "key": "3",
-      "id": 3,
+      "vehicle": {
+        "title": "Chevrolet",
+        "status": "In shop"
+      },
+      "date": 1614256080,
+      "time": "2021-02-25T12:28:00.000Z",
+      "totalKm": "432",
+      "volume": "890",
+      "fuelType": "",
+      "fillingType": "",
+      "id": 2,
+      "key": "2",
+      "cost": {
+        "title": "Rp 625.000",
+        "subTitle": "Rp 9,879/ltr"
+      }
+    },
+    {
       "vehicle": {
         "title": "Toyota Prius (B-41084)",
         "status": "Out of service"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "time": 1613636580000,
+      "totalKm": "17.845",
+      "volume": "180.30",
+      "fuelType": "",
+      "fillingType": "",
+      "id": 3,
+      "key": "3",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
       }
     },
     {
-      "key": "4",
-      "id": 4,
       "vehicle": {
-        "title": "Toyota Prius (B-41082)",
+        "title": "BMW (B-41083)",
         "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613623200,
+      "time": 1613623200000,
+      "totalKm": "17.845",
+      "volume": "170.30",
+      "fuelType": "",
+      "fillingType": "",
+      "id": 4,
+      "key": "4",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -67,9 +79,9 @@
         "title": "Toyota Prius (B-41083)",
         "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -82,9 +94,9 @@
         "title": "Toyota Prius (B-41082)",
         "status": "In shop"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -97,9 +109,9 @@
         "title": "Toyota Prius (B-41084)",
         "status": "Out of service"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -112,9 +124,9 @@
         "title": "Toyota Prius (B-41082)",
         "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -127,9 +139,9 @@
         "title": "Toyota Prius (B-41084)",
         "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -142,9 +154,9 @@
         "title": "Toyota Prius (B-41082)",
         "status": "In shop"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -157,9 +169,9 @@
         "title": "Toyota Prius (B-41083)",
         "status": "Out of service"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"
@@ -172,9 +184,9 @@
         "title": "Toyota Prius (B-41082)",
         "status": "Active"
       },
-      "time": "10:23 AM",
-      "totalKm": "17.845 km",
-      "volume": "123,35 L",
+      "date": 1613636580,
+      "totalKm": "17.845",
+      "volume": "170.30",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"

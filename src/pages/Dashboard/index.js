@@ -12,6 +12,7 @@ import {
 import Car from "../../assets/images/car.png";
 import { STATISTICS_LIST } from "./data";
 import Sort from "../../components/Sort";
+import moment from "moment";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -48,18 +49,27 @@ const Dashboard = () => {
     },
     {
       title: "Time",
-      dataIndex: "time",
-      key: "time",
+      dataIndex: "date",
+      key: "date",
+      render: (text, record) => {
+        return <p>{moment(record.date * 1000).format("hh:mm A")}</p>;
+      },
     },
     {
       title: "Total Km",
       dataIndex: "totalKm",
       key: "totalKm",
+      render: (text, record) => {
+        return <p>{`${record.totalKm} Km`}</p>;
+      },
     },
     {
       title: "Volume",
       dataIndex: "volume",
       key: "volume",
+      render: (text, record) => {
+        return <p>{`${record.volume} L`}</p>;
+      },
     },
     {
       title: "Cost",

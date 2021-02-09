@@ -8,4 +8,8 @@ const deleteVehicle = async (id) => {
   return await axiosInstance.delete(`/vehicles/${id}`);
 };
 
-export default { getVehicles, deleteVehicle };
+const editVehicle = async (data) => {
+  return await axiosInstance.put(`/vehicles/${data.id}`, data);
+};
+
+export default { getVehicles, deleteVehicle, editVehicle };

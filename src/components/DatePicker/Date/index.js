@@ -1,8 +1,17 @@
 import React from "react";
-import { DatePicker as AntdDatePicker } from "antd";
+import { DatePicker as AntdDatePicker } from "formik-antd";
 
-const DatePicker = () => {
-  return <AntdDatePicker className="field" />;
+const format = "MM/DD/YYYY";
+
+const DatePicker = ({ name }) => {
+  return (
+    <AntdDatePicker
+      className="field"
+      name={name}
+      allowClear={false}
+      format={format}
+    />
+  );
 };
 
 export default DatePicker;

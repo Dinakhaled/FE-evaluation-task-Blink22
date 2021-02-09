@@ -1,14 +1,16 @@
 import React from "react";
-import { TimePicker as AntdTimePicker } from "antd";
+import { TimePicker as AntdTimePicker } from "formik-antd";
 import moment from "moment";
-const format = "HH:mm";
+const format = "hh:mm A";
 
-const TimePicker = () => {
+const TimePicker = ({ name }) => {
   return (
     <AntdTimePicker
       className="field"
       defaultValue={moment(new Date(), format)}
       format={format}
+      name={name}
+      allowClear={false}
     />
   );
 };
