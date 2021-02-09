@@ -13,7 +13,7 @@
 - Formik
 - Yup
 
-## Tmie sheet
+## Time sheet
 - Create the app & put the main structure folders (2h)
 - Header UI & sidemenu UI/toggling & routing (2.5h)
 - Filters fields UI & analtices info component UI (2h)
