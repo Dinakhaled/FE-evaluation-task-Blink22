@@ -5,8 +5,10 @@
   border-bottom: 1px solid $border;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
-  > *{
+  > * {
     margin-right: 10px;
+    margin-bottom: 10px;
   }
 }

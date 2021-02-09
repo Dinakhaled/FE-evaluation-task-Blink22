@@ -9,7 +9,6 @@ const Routes = (
     <Router history={history}>
       <Switch>
         <LazyComponent.Dashboard path="/" exact />
-        <LazyComponent.Vehicles path="/vehicles" />
         <Redirect from="**" to="/" />
       </Switch>
     </Router>

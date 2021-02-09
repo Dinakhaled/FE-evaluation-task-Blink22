@@ -1,32 +1,44 @@
 @import "../../scss/variables";
 
-.antd-table-custom {
-  .ant-pagination-item {
-    display: none;
-  }
 
-  .ant-pagination-prev, .ant-pagination-next {
-    height: 46px;
-    width: 46px;
+
+.antd-table-custom {
+  position: relative;
+
+  .ant-pagination {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    
-    button {
-      border: 0;
-      border: 1px solid $border;
-      border-radius: 4px;
+    position: absolute;
+    right: 160px;
+    top: -76px;
+
+    .ant-pagination-item {
+      display: none;
     }
-  }
-
-  .ant-pagination-prev button {
-    border-right: 0;
-    border-radius: 4px 0 0 4px;
-  }
-
-  .ant-pagination-next button {
-    border-radius: 0 4px 4px 0;
+    
+    .ant-pagination-prev, .ant-pagination-next {
+      height: 46px;
+      width: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      
+      button {
+        border: 0;
+        border: 1px solid $border;
+        border-radius: 4px;
+      }
+    }
+    
+    .ant-pagination-prev button {
+      border-right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    
+    .ant-pagination-next button {
+      border-radius: 0 4px 4px 0;
+    }
   }
 
   .ant-table table {

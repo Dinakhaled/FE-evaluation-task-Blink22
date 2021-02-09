@@ -1,7 +1,12 @@
 @import '../../scss/variables';
 
 .ant-modal {
-  min-width: 620px;
+  min-width: auto;
+  
+  @media screen and (min-width: 1024px) {
+    min-width: 620px;
+  }
+
   .ant-modal-content {
     border: 1px solid $border;
     border-radius: 4px;
@@ -40,11 +45,3 @@
     }
   }
 }
-
-// .ant-modal-wrap {
-//   z-index: 1102;
-// }
-
-// .ant-modal-mask {
-//   z-index: 1101;
-// }

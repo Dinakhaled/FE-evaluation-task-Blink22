@@ -49,12 +49,19 @@ const Table = ({ data, columns, deleteAction, sort }) => {
 
   return (
     <>
-      {sort}
+      <div className="d-flex align-items-center justify-content-end mb-3">
+        {sort}
+      </div>
       <AntdTable
         columns={[...columns, actions]}
         dataSource={listData}
         className="antd-table-custom"
-        pagination={{ position: ["topRight"], showSizeChanger: true }}
+        pagination={{
+          position: ["topRight"],
+          showTotal: (total, range) => (
+            <p className="textGray mb-0 mx-1">{`${range} of ${total}`}</p>
+          ),
+        }}
       />
     </>
   );

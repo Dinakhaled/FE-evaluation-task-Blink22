@@ -24,7 +24,7 @@
         "status": "In shop"
       },
       "date": 1614256080,
-      "time": "2021-02-25T12:28:00.000Z",
+      "time": 1614256080000,
       "totalKm": "432",
       "volume": "890",
       "fuelType": "",
@@ -178,15 +178,18 @@
       }
     },
     {
-      "key": "12",
-      "id": 12,
       "vehicle": {
-        "title": "Toyota Prius (B-41082)",
+        "title": "BMW (B-41083)",
         "status": "Active"
       },
-      "date": 1613636580,
+      "date": 1646900580,
+      "time": 1613636580000,
       "totalKm": "17.845",
       "volume": "170.30",
+      "fuelType": "",
+      "fillingType": "",
+      "id": 12,
+      "key": "12",
       "cost": {
         "title": "Rp 625.000",
         "subTitle": "Rp 9,879/ltr"

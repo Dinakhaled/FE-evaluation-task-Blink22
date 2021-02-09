@@ -48,6 +48,7 @@
     "moment": "^2.29.1",
     "react-burger-menu": "^3.0.3",
     "react-number-format": "^4.4.4",
+    "react-responsive": "^8.2.0",
     "yup": "^0.32.8"
   }
 }

@@ -7,12 +7,14 @@ import Statistics from "../../components/Statistics";
 import Table from "../../components/Table";
 import {
   deleteVehicleRequest,
+  getVehicles,
   getVehiclesRequest,
 } from "../../store/vehicles/actions";
 import Car from "../../assets/images/car.png";
 import { STATISTICS_LIST } from "./data";
 import Sort from "../../components/Sort";
 import moment from "moment";
+import _ from "lodash";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -54,6 +56,7 @@ const Dashboard = () => {
       render: (text, record) => {
         return <p>{moment(record.date * 1000).format("hh:mm A")}</p>;
       },
+      responsive: ["sm"],
     },
     {
       title: "Total Km",
@@ -70,6 +73,7 @@ const Dashboard = () => {
       render: (text, record) => {
         return <p>{`${record.volume} L`}</p>;
       },
+      responsive: ["md"],
     },
     {
       title: "Cost",
@@ -81,8 +85,22 @@ const Dashboard = () => {
           <p className="cost-title sub mb-0">{subTitle}</p>
         </>
       ),
+      responsive: ["md"],
     },
   ];
+
+  const handleSort = (value) => {
+    switch (value) {
+      case "Date":
+        const sortedVehiclesDate = _.sortBy(vehiclesList, ["date"]);
+        dispatch(getVehicles(sortedVehiclesDate));
+        break;
+      default:
+        const sortedVehiclesStatus = _.sortBy(vehiclesList, ["vehicle.status"]);
+        dispatch(getVehicles(sortedVehiclesStatus));
+        break;
+    }
+  };
 
   return (
     <div>
@@ -94,7 +112,7 @@ const Dashboard = () => {
         data={vehiclesList}
         deleteAction={deleteVehicleRequest}
         columns={COLUMNS}
-        sort={<Sort list={["Date", "Status"]} />}
+        sort={<Sort list={["Date", "Status"]} handleChange={handleSort} />}
       />
       <EditVehicle />
     </div>
