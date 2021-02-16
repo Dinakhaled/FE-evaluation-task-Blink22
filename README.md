@@ -1,5 +1,9 @@
 # FE-evaluation-task-Blink22
 
+## Installation
+`npm install`
+`npm start`
+
 ## Tools and technology
 - React.js
 - Lazy loading for the containers
