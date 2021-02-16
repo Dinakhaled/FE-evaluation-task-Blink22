@@ -1,7 +1,7 @@
 # FE-evaluation-task-Blink22
 
 ## Installation
-`npm install`
+`npm install` then 
 `npm start`
 
 ## Tools and technology
